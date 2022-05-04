@@ -23,7 +23,7 @@ fonte_padrao = pygame.font.get_default_font()
 fonte = pygame.font.SysFont(fonte_padrao, 60, bold=False, italic=False)
 texto = fonte.render(points_str, 1,(255,255,255))
 carro1 = pygame.image.load('car_verde.png')
-carro2 = pygame.image.load('car1_azul.png')
+carro2 = pygame.image.load('car_azul.png')
 
 while True:
     relogio.tick(60)
