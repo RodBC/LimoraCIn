@@ -24,10 +24,12 @@ fonte = pygame.font.SysFont(fonte_padrao, 60, bold=False, italic=False)
 texto = fonte.render(points_str, 1,(255,255,255))
 carro1 = pygame.image.load('car_verde.png')
 carro2 = pygame.image.load('car_azul.png')
+background = pygame.image.load(r"fundo.png")	
 
 while True:
     relogio.tick(60)
-    tela.fill((0,0,0))
+    tela.fill((0, 0, 0))
+    tela.blit(background, (0, 0))
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
@@ -42,7 +44,6 @@ while True:
             elif event.key == K_s and y_verde <= 440:
                 y_verde += 10
 
-
     if pygame.key.get_pressed()[K_a]:
         if(x_verde >= 10): x_verde -= 10
     elif pygame.key.get_pressed()[K_d]:
@@ -51,6 +52,46 @@ while True:
         if(y_verde >= 10): y_verde -= 10
     elif pygame.key.get_pressed()[K_s]:
         if(y_verde <= 440): y_verde += 10
+        
+    # rect_verde = pygame.draw.rect(tela,(0,135,1),(x_verde,y_verde,30,30))
+    # rect_vermelho = pygame.draw.rect(tela,(255,0,0),(x_vermelho,y_vermelho,30,30))
+    # rect_amarelo = pygame.draw.rect(tela,(255,255,0),(x_amarelo,y_amarelo,30,30))
+    # y_verde += 4
+    # y_amarelo += 4
+    
+    # rect_verde = pygame.draw.rect(tela,(0,135,1),(x_verde,y_verde,30,30))
+    # rect_vermelho = pygame.draw.rect(tela,(255,0,0),(x_vermelho,y_vermelho,30,30))
+    # rect_amarelo = pygame.draw.rect(tela,(255,255,0),(x_amarelo,y_amarelo,30,30))
+    # y_verde += 4
+    # y_amarelo += 4
+
+    # if y_verde > altura:
+    #     y_verde = 0
+    #     x_verde = randint(145,667)
+    # if rect_verde.colliderect(rect_vermelho):
+    #     exit()
+    # if y_amarelo > altura:
+    #     y_amarelo = 0
+    #     x_amarelo = randint(145,667)
+    # if rect_vermelho.colliderect(rect_amarelo):
+    #     points+=1
+    #     print('Pontos: ',points)
+    #     y_amarelo = 0
+    #     x_amarelo = randint(145, 667)
+    
+    # if y_verde > altura:
+    #     y_verde = 0
+    #     x_verde = randint(145,667)
+    # if rect_verde.colliderect(rect_vermelho):
+    #     exit()
+    # if y_amarelo > altura:
+    #     y_amarelo = 0
+    #     x_amarelo = randint(145,667)
+    # if rect_vermelho.colliderect(rect_amarelo):
+    #     points+=1
+    #     print('Pontos: ',points)
+    #     y_amarelo = 0
+    #     x_amarelo = randint(145, 667)
 
     tela.blit(carro1,(x_verde,y_verde))
     tela.blit(carro2,(x_azul,y_azul))
