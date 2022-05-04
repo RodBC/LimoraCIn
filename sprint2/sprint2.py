@@ -68,8 +68,8 @@ while True:
     #confições de colisão
     #largura: 167
     #altura: 301
-    if (x_verde + 167) > x_azul and (y_verde + 301) > y_azul:
-        exit()
+    # if (x_verde + 167) > x_azul and (y_verde + 301) > y_azul:
+    #     exit()
     '''if carro2.colliderect(rect_amarelo):
         points+=1
         print('Pontos: ',points)
