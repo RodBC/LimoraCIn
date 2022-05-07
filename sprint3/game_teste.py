@@ -25,9 +25,9 @@ pygame.display.set_caption('LImo RaCIn')
 fonte_padrao = pygame.font.get_default_font()
 fonte = pygame.font.SysFont(fonte_padrao, 60, bold=False, italic=False)
 texto = fonte.render(points_str, 1,(255,255,255))
-carro_verde = pygame.image.load('car_verde.png')
-carro_azul = pygame.image.load('car_azul.png')
-pitu = pygame.image.load('pitu.png')
+carro_verde = pygame.image.load('../imagens/greenCar.png')
+carro_azul = pygame.image.load('../imagens/blueCar.png')
+pitu = pygame.image.load('../imagens/pitu.png')
 background = pygame.image.load(r"fundo.png")	
 
 while True:
