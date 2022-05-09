@@ -4,6 +4,10 @@ from sys import exit
 from random import randint,choice
 
 pygame.init()
+
+soundtrack = pygame.mixer.music.load('bandoleros.mp3')
+pygame.mixer.music.play(-1)
+
 valores_para_x = [30,50,70,100] #valores fixos que representam a faixa em que os carros vão aparecer
 points = 0
 points_str = str(points)
