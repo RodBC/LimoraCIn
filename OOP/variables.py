@@ -1,4 +1,3 @@
-
 import pygame
 from pygame.locals import *
 from sys import exit
@@ -18,6 +17,9 @@ y_amarelo = 0
 x_pitu = randint(140, 629)
 y_pitu = -80
 flag_soma = 4
+x_bitcoin = randint(140, 629)
+y_bitcoin = -80
+
 
 tela = pygame.display.set_mode((largura,altura))
 relogio = pygame.time.Clock()
@@ -25,7 +27,8 @@ pygame.display.set_caption('LImo RaCIn')
 fonte_padrao = pygame.font.get_default_font()
 fonte = pygame.font.SysFont(fonte_padrao, 60, bold=False, italic=False)
 texto = fonte.render(points_str, 1,(255,255,255))
-carro_verde = pygame.image.load('../imagens/greenCar.png')
-carro_azul = pygame.image.load('../imagens/blueCar.png')
-pitu = pygame.image.load('../imagens/pitu.png')
-background = pygame.image.load("../imagens/fundo.png")	
+carro_verde = pygame.image.load('greenCar.png')
+carro_azul = pygame.image.load('blueCar.png')
+pitu = pygame.image.load('pitu.png')
+background = pygame.image.load("fundo.png")	
+bitcoin = pygame.image.load('bitcoin-icon.png')
