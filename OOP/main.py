@@ -27,7 +27,6 @@ class limoRacing:
     #     self.y_pitu = y_pitu 
     
     def runGame(self, game_engine):
-        return game_engine(flag_soma, background, pitu, carro_azul, carro_verde, texto, fonte, fonte_padrao, relogio, tela, x_verde, y_verde, x_azul, y_azul, x_pitu, y_pitu)
+        return game_engine(flag_soma, background, pitu, carro_azul, carro_verde, texto, fonte, fonte_padrao, relogio, tela, x_verde, y_verde, x_azul, y_azul, x_pitu, y_pitu, x_bitcoin, y_bitcoin, bitcoin)
          
-
  
